@@ -1,0 +1,200 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+    background: #bbb;
+    margin-top: 8vh;
+    margin-bottom: 8vh;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: dodgerblue;
+    min-height: 8vh;
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
+.logo {
+    color: silver;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 2vh;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    /* Mobile */
+    background-color: dodgerblue;
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top:8vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(100%);
+    opacity: 0%;
+    transition: transform 0.5s ease-in;
+}
+
+.nav-active {
+    opacity: 100%;
+    transform: translateX(0%);
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links li a {
+    color: lightgray;
+    text-decoration: none;
+    font-size: 1.5vh;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.burger {
+    display: block;
+}
+
+.burger-active .first-line {
+    transform: translate(-2px,6px) rotate(-45deg);
+}
+.burger-active .second-line {
+    transform: scaleX(0);
+}
+.burger-active .third-line {
+    transform: translate(-2px,-6px) rotate(45deg);
+}
+
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: lightgray;
+    margin: 3px;
+    transition: transform 0.5s ease-in;
+}
+
+
+/* Chat */
+
+.chat-wrapper {
+    padding: 10px;
+}
+
+.chat-message {
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #ddd;
+    background: #ccc;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.chat-message::after
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.chat-message img {
+    max-width: 6vh;
+    border-radius: 50%;
+}
+
+.chat-message .name {
+    font-weight: bold;
+}
+
+.notification {
+    margin: 2vh;
+    border: initial;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.message-agent {
+    background: #ccc;
+}
+
+.message-agent img {
+    float: left;
+}
+
+.message-agent p {
+    margin-left: 7vh;
+}
+
+.message-agent .timestamp {
+    float: right;
+    color: #aaa;
+}
+
+.message-customer img
+{
+    float: right;
+}
+
+.message-customer {
+    background: #bbb;
+}
+
+.message-customer p {
+    margin-right: 7vh;
+}
+
+.message-customer .timestamp {
+    color: #ddd;
+}
+
+/* Bottom */
+
+.sticky-footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    min-height: 8vh;
+    background: dodgerblue;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+
+/* Greater than mobile*/
+@media screen and (min-width: 769px){
+    .burger {
+        display: none;
+    }
+
+    .nav-links {
+        position: initial;
+        right: initial;
+        height: initial;
+        top: initial;
+        transform: initial;
+        opacity: 100% !important;
+        transition: initial;
+    }
+}
