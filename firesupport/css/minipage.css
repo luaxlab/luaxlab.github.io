@@ -1,0 +1,112 @@
+/* minipage.css - Minimal, responsive design for pages */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+    background: #bbb;
+    margin-top: 8vh;
+    margin-bottom: 8vh;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: dodgerblue;
+    min-height: 8vh;
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
+.logo {
+    color: silver;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 2vh;
+}
+
+.nav-links {
+    display: flex;
+    width: 60%;
+    /* Mobile */
+    background-color: dodgerblue;
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(100%);
+    opacity: 0;
+    transition: transform 0.5s ease-in;
+    justify-content: start;
+}
+
+.nav-active {
+    opacity: 1;
+    transform: translateX(0%);
+}
+
+.nav-links li {
+    list-style: none;
+    margin: 1em;
+}
+
+.nav-links li a {
+    color: lightgray;
+    text-decoration: none;
+    font-size: 1.5vh;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.burger {
+    display: block;
+}
+
+.burger-active .first-line {
+    transform: translate(-2px, 6px) rotate(-45deg);
+}
+
+.burger-active .second-line {
+    transform: scaleX(0);
+}
+
+.burger-active .third-line {
+    transform: translate(-2px, -6px) rotate(45deg);
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: lightgray;
+    margin: 3px;
+    transition: transform 0.5s ease-in;
+}
+
+/* Greater than mobile*/
+
+@media screen and (min-width: 769px) {
+    .burger {
+        display: none;
+    }
+    .nav-links {
+        position: initial;
+        right: initial;
+        height: initial;
+        top: initial;
+        transform: initial;
+        transition: initial;
+        flex-direction: row;
+        justify-content: end;
+        opacity: 1 !important;
+    }
+}
