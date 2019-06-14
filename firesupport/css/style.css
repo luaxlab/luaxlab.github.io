@@ -1,0 +1,112 @@
+/* Chat */
+
+.chat-wrapper {
+    padding: 10px;
+}
+
+.chat-message {
+    padding: 10px;
+    margin: 1vh;
+    border: 2px solid #ddd;
+    background: #ccc;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.chat-message::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.chat-message img {
+    max-width: 6vh;
+    border-radius: 50%;
+}
+
+.chat-message .name {
+    font-weight: bold;
+}
+
+.notification {
+    margin: 2vh;
+    border: initial;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.message-agent {
+    background: #ccc;
+}
+
+.message-agent img {
+    float: left;
+}
+
+.message-agent p {
+    margin-left: 7vh;
+}
+
+.message-agent .timestamp {
+    float: right;
+    color: #aaa;
+}
+
+.message-customer img {
+    float: right;
+}
+
+.message-customer {
+    background: #bbb;
+}
+
+.message-customer p {
+    margin-right: 7vh;
+    word-wrap: break-word;
+}
+
+.message-customer .timestamp {
+    color: #ddd;
+}
+
+/* Bottom */
+
+.sticky-footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: dodgerblue;
+}
+
+/* Full-width inputs */
+
+.chat-input {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.chat-input textarea {
+    width: 80%;
+    padding: 2px;
+    background: rgb(221, 213, 213);
+    display: inline-block;
+    border: none;
+    box-sizing: border-box;
+    resize: none;
+}
+
+.chat-input input[type=button], .chat-input input[type=submit]  {
+    background: dodgerblue;
+    border: none;
+    width: 20%;
+    padding: auto;
+    display: inline-block;
+    box-sizing: border-box;
+    transition: background-color .2s;
+}
+
+.chat-input input[type=button]:hover, .chat-input input[type=submit]:hover  {
+    background: #eee;
+}
