@@ -1,0 +1,55 @@
+<html>
+<header>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale: 1;">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/minipage.css">
+    <link rel="stylesheet" href="css/style.css">
+</header>
+
+<body>
+    <nav>
+        <div class="logo">
+            <h4>Chat</h4>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="#">Beenden</a></li>
+            <li><a href="#">Datenschutz | Impressum</a></li>
+
+        </ul>
+        <div class="burger">
+            <div class="first-line"></div>
+            <div class="second-line"></div>
+            <div class="third-line"></div>
+        </div>
+    </nav>
+    <main>
+        <div class="chat-wrapper">
+            <div class="chat-message notification">
+                <p>Wilkommen im Service-Chat. Bitte geben sie ihr Passwort niemals weiter!
+                </p>
+            </div>
+            <div class="chat-message notification">
+                <p><strong>Warnung: Es besteht noc kein XSS-Schutz</strong></p>
+            </div>
+            <div class="chat-message message-agent">
+                <img src="img/avatars/john.png" alt="John" class="avatar" />
+                <p class="name">John</p>
+                <p>Hallo und willkommen im service-chat, wie kann ich ihnen helfen?/p>
+                <span class="timestamp">11.15</span>
+            </div>
+
+    </main>
+    <div class="sticky-footer">
+        <form class="chat-input" action="">
+            <textarea id="chat-msg" placeholder="Nachricht eingeben"></textarea>
+            <input id="chat-send" type="button" value="Senden">
+        </form>
+    </div>
+    <footer>
+        <script src="ui.js"></script>
+    </footer>
+</body>
+
+</html>
