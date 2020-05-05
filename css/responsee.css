@@ -11,7 +11,7 @@
   margin:0;	
 }
 body {
-  background:none repeat scroll 0 0 #111;
+  background:none repeat scroll 0 0 #444;
   font-size:16px;
   font-family:"Open Sans",Arial,sans-serif;
   color:#fff;
@@ -82,10 +82,11 @@ hr {
 }
 li {padding:0;}
 ul,ol {padding-left:1.25rem;}
+/* I dont like this
 blockquote {
   border:2px solid #f0f0f0;
   padding:1.25rem;
-}
+} */
 cite {
   color:#999;
   display:block;
@@ -150,7 +151,7 @@ nav {
   min-width:100%;
   padding:0.625rem;
 }
-.top-nav li a:hover, .aside-nav li a:hover {background:#444;}
+.top-nav li a:hover, .aside-nav li a:hover {background:#666;}
 .top-nav li ul {display:none;}
 .top-nav li ul li,.top-nav li ul li ul li {
   float:none;
@@ -384,7 +385,7 @@ nav.breadcrumb-nav ul li:last-child:after {content:"";}
 .line .line {padding:0;}
 .hide-xxl {display:none!important;}
 .box {
-  background:none repeat scroll 0 0 #fff;
+  background:none repeat scroll 0 0 #444;
   display:block;
   padding:1.25rem;
   width:100%;

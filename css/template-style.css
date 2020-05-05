@@ -1,6 +1,6 @@
 nav {
   padding: 0.825rem 0;
-  background: #111;
+  background: #444;
 }
 
 #carousel {
@@ -8,18 +8,63 @@ nav {
 }
 
 .block-darker {
-  background: #111;
+  background: #222;
   padding:4.5rem 0;
 }
 .block-lighter {
-  background: #222;
+  background: #333;
   padding:4.5rem 0;
 }
 
 footer {
-  background:#111;
+  background:#444;
   padding:3.5rem 0;
 }
+
+.default-text {
+  color: white !important;
+}
+.default-text:hover {
+  color: white !important;
+}
+
+.hoverable {
+  transition: background 0.20s linear 0s;
+  -o-transition: background 0.20s linear 0s;
+  -ms-transition: background 0.20s linear 0s;
+  -moz-transition: background 0.20s linear 0s;
+  -webkit-transition: background 0.20s linear 0s;
+}  
+
+.hoverable:hover {
+  background: none repeat scroll 0 0 #999;
+  transition: background 0.20s linear 0s;
+  -o-transition: background 0.20s linear 0s;
+  -ms-transition: background 0.20s linear 0s;
+  -moz-transition: background 0.20s linear 0s;
+  -webkit-transition: background 0.20s linear 0s;
+}  
+
+ul {
+  list-style-type: square;
+}
+
+/* Blockquotes */
+blockquote {
+  border: 0;
+  border-left: .3rem solid #99AAB5; 
+  box-sizing: initial;
+  padding: 0 0 0 .5rem;
+}
+
+.quote-red {
+  border-left: .3rem solid red; 
+}
+
+.quote-luax {
+  border-left: .3rem solid #3090FF; 
+}
+
 @media screen and (max-width: 768px) {
   .right {
   float:none;
